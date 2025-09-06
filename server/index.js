@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express()
 app.use(cors())
 app.use(express.json())
-mongoose.connect("mongodb://localhost:27017/crud")
+mongoose.connect("mongodb://localhost:27017/crud"
 const UserModel = require("./models/Users")
 
 app.get('/', (res,req)=>{
