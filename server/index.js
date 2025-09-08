@@ -10,7 +10,7 @@ const UserModel = require("./models/Users")
 
 app.get('/', (res,req)=>{
     UserModel.find({})
-    .then(users =>res.json(users))
+    .then(users =>res.json(users)
     .err(err =>res.json(err))
 })
 app.get('/getUser/:id', (req, res)=>{
